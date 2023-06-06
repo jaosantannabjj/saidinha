@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="index.js"> -->
+    <title>Pedido de encontro.</title>
+    <style>
+        body{
+    font-family: "Montserrat";
+    background-color: rgb(216, 8, 8);
+}
+
+.painel{
+    margin: auto;
+    color: #1a1a1a;
+    width: 500px;
+    height: 500px ;
+    background-color: white;
+    font-weight: 800;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+h1{
+    font-size: 23px;
+}
+
+.org{
+    margin-top: -30px;
+}
+
+img{
+    max-width: 100%;
+    margin: 0;
+    margin-left: 55px;
+}
+
+
+h5{
+    margin-top: -30px;
+}
+
+#sim{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(216, 8, 8);
+    border: white;
+    border-radius: 5px;
+    color: white;
+    margin-left:-70px;
+
+}
+
+#Nao{
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: rgb(216, 8, 8);
+    border: white;
+    border-radius: 5px;
+    color: white;
+    border: white 2px;
+    margin-left: 20px;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="painel">
+        <h1>Chegou um momento importante</h1>
+        <img src="https://gifman.net/wp-content/uploads/2019/06/ursinhos-fofos-coracoes.gif" alt="">
+        
+        <h5>Aceita se encontrar comigo?</h5>
+        <div class="org">
+        <a href="https://api.whatsapp.com/send?phone=5521982078330&text=Aceito%20meu%20amor!%20%3C3"><button id="sim"> SIM!</button></a>
+        <a href=""><button onmouseover="fuja()" id="Nao" > NÃO!</button></a>
+        </div>
+    </div>
+
+    <script>
+    function fuja(){
+    var botaoNao = document.getElementById("Nao")
+    var larguraJanela = window.innerWidth;
+    var alturaJanela  = window.innerHeight;
+    
+    var maxX = larguraJanela - botaoNao.offsetWidth;
+    var maxY = alturaJanela - botaoNao.offsetHeight;
+    
+    var aleatorioX = Math.floor(Math.random() * maxX);
+    var aleatorioY = Math.floor(Math.random() * maxY);
+    
+    botaoNao.style.left = aleatorioX + "px";
+    botaoNao.style.top = aleatorioY + "px";
+    }
+    </script>
+</body>
+
+</html>

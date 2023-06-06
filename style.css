@@ -1,0 +1,60 @@
+body{
+    font-family: "Montserrat";
+    background-color: rgb(216, 8, 8);
+}
+
+.painel{
+    margin: auto;
+    color: #1a1a1a;
+    width: 500px;
+    height: 500px ;
+    background-color: white;
+    font-weight: 800;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1{
+    font-size: 23px;
+}
+
+.org{
+    margin-top: -30px;
+}
+
+img{
+    max-width: 100%;
+    margin: 0;
+    margin-left: 55px;
+}
+
+
+h5{
+    margin-top: -30px;
+}
+
+#sim{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(216, 8, 8);
+    border: white;
+    border-radius: 5px;
+    color: white;
+    margin-left:-70px;
+
+}
+
+#Nao{
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: rgb(216, 8, 8);
+    border: white;
+    border-radius: 5px;
+    color: white;
+    margin-left: 20px;
+
+}
